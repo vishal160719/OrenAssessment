@@ -1,0 +1,14 @@
+/* HorizontalBarGraph.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #2a2a72; /* Darker title color */
+    margin-bottom: 20px;
+  }
+  

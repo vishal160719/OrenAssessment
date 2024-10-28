@@ -1,0 +1,83 @@
+/* PieChart.css */
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #2a2a72; /* Dark background color */
+    padding: 20px; /* Padding around the content */
+    color: white; /* White text color */
+}
+
+.pie-chart-header {
+    font-size: 2.5rem; /* Larger font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.pie-chart-title {
+    font-size: 3rem; /* Font size for the title inside the chart */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White color for the title */
+}
+
+.pie-chart-subtitle {
+    font-size: 1.5rem; /* Font size for the subtitle inside the chart */
+    color: #ffffff; /* White color for the subtitle */
+}
+
+.pie-chart {
+    flex-grow: 1; /* Allow the chart to grow and fill available space */
+    width: 100%; /* Set width to 100% to utilize full container width */
+    max-width: 1000px; /* Max width for larger screens */
+    max-height: 1000px; /* Max height for larger screens */
+    display: flex;
+    justify-content: center; /* Center the chart */
+    align-items: center; /* Center the chart */
+    margin: 0; /* Remove default margin */
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-around; /* Space between labels */
+    width: 100%; /* Full width for labels */
+    margin-top: 20px; /* Space above the labels */
+}
+
+.chart-label {
+    text-align: center; /* Center the text */
+    color: white; /* White color for labels */
+    font-size: 1.2rem; /* Font size for labels */
+    width: 25%; /* Width for each label */
+}
+
+.label-bar {
+    display: inline-block; /* Inline block for color bars */
+    height: 20px; /* Height for color bars */
+    width: 20px; /* Width for color bars */
+    margin-right: 10px; /* Space between color bar and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pie-chart {
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .pie-chart-header {
+        font-size: 2rem; /* Smaller font size for header */
+    }
+
+    .pie-chart-title {
+        font-size: 2.5rem; /* Smaller font size for the title */
+    }
+
+    .pie-chart-subtitle {
+        font-size: 1.2rem; /* Smaller font size for the subtitle */
+    }
+
+    .chart-label {
+        font-size: 1rem; /* Smaller font size for labels */
+    }
+}

@@ -1,0 +1,34 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the sides */
+    align-items: center; /* Vertically centers the items */
+    padding: 20px; /* Adds padding around the header */
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #dee2e6; /* Light border at the bottom */
+  }
+  
+  .header h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 35px; /* Sets font size */
+    color: #357588; /* Darker text color */
+    text-align: left; /* Aligns text to the right */
+    flex-grow: 1; /* Allows the title to take remaining space */
+  }
+  
+  .header button {
+    margin-left: 10px; /* Adds space between buttons */
+    padding: 10px 15px; /* Adds padding for better click area */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners */
+    background-color: #357588; /* Primary button color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Sets font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Adds transition effect */
+  }
+  
+  .header button:hover {
+    background-color: #357588; /* Darkens the button color on hover */
+  }
+  

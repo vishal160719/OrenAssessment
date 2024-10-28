@@ -1,0 +1,53 @@
+/* Full-screen layout for dashboard */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Upper half with three equal columns */
+.upper-half {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Lower half with two equal columns */
+.lower-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Style each section */
+.grid-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  min-height: 150px; /* Set a minimum height for stability */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .upper-half {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+
+  .lower-half {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+}
